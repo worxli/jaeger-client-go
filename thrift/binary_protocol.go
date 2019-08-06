@@ -100,7 +100,6 @@ func (p *TBinaryProtocol) WriteMessageBegin(name string, typeId TMessageType, se
 		e = p.WriteI32(seqId)
 		return e
 	}
-	return nil
 }
 
 func (p *TBinaryProtocol) WriteMessageEnd() error {
